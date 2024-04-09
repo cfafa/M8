@@ -1,13 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
 html {
   scroll-behavior: smooth;
   background: #afedc4;
 }
-body {
-  background-color: #62e4a3;
-}
+
 
 header {
+
   padding:  0 20px 20px 20px;
   margin: 0;
-  border: 5px solid rgba(6, 110, 70, 0.781);
+
 }
+.rounded {
+  margin: 10px 50px 20px;
+  counter-reset: li; 
+  list-style: none; 
+  font: 14px "Trebuchet MS", "Lucida Sans";
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+  .rounded a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  background: #DAD2CA;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: .3s ease-out;
+  }
+  .rounded a:hover {background: #E9E4E0;}
+  .rounded a:hover:before {transform: rotate(360deg);}
+  .rounded a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #8FD4C1;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+  }
+
+
+  .subtitle {
+    font-family: monospace;
+    color: #606060;
+  }
+  ul {
+    list-style: none; 
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    transition: .5s linear;
+  }
+  i {
+    margin-right: 10px;
+  }
+  nav {
+    display: block;
+    width: 660px;
+    margin: 0 auto 30px;
+  }
+
+  .four ul {
+    display: -webkit-flex; 
+    display: flex;
+    background: #a7ffc4;
+    padding-left: 0;
+  }
+  .four a {
+    padding: 1em;
+    display: block;
+    color: #62e4a3;
+    border-right: 1px solid #62e4a3;
+    background: rgba(21, 73, 64, 0.966);
+  }
+  .four a:hover {background: #FFAB51}
