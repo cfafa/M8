@@ -3,13 +3,25 @@
 html {
   scroll-behavior: smooth;
   background: #afedc4;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.h1 {
+  margin: 10px 50px 20px;
+  border: double;
+  border-color: #265c49;
+  text-align: center;
+  font-family: monospace;
+  color: #4b9286;
+}
 
-header {
+body {
 
   padding:  0 20px 20px 20px;
-  margin: 0;
+  margin: 10px 50px 20px;
+  margin-left: 2em;
+  margin-right: 2em;
 
 }
 .rounded {
@@ -52,10 +64,6 @@ header {
   }
 
 
-  .subtitle {
-    font-family: monospace;
-    color: #606060;
-  }
   ul {
     list-style: none; 
     margin: 0 auto;
@@ -72,6 +80,7 @@ header {
     display: block;
     width: 660px;
     margin: 0 auto 30px;
+    font-style: oblique;
   }
 
   .four ul {
@@ -87,4 +96,55 @@ header {
     border-right: 1px solid #62e4a3;
     background: rgba(21, 73, 64, 0.966);
   }
-  .four a:hover {background: #FFAB51}
+  .four a:hover {background: #a7ffc4}
+
+  .border {
+    list-style: none;
+    padding: 0;
+    }
+    .border li {
+    font-family: "Trebuchet MS", "Lucida Sans";
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #99e69f; 
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+         -2px -2px 5px 0 rgba(0,0,0,.1),
+        2px 2px 5px 0 rgba(0,0,0,.1),
+        -2px 2px 5px 0 rgba(0,0,0,.1);
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s all linear;
+    }
+
+    .one {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .one h1 {
+      font-family: 'Righteous', cursive;
+      position: relative;
+      color: #204e3d; 
+      display: inline-block;
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      font-size: 3em;
+      padding: 11px 60px;
+      margin: 0; 
+      line-height: 1;
+    }
+    .one h1:before, .one h1:after {
+      content: ""; 
+      position: absolute;
+      top: 0;
+      width: 30px;
+      height: 100%;
+      border-left: 2px solid;
+      border-right: 2px solid;
+      background: repeating-linear-gradient(180deg, transparent, transparent 2px, #204e3d 2px #204e3d 4px);
+    }
+    .one h1:before {left: 0;}
+    .one h1:after {right: 0;}
+    @media (max-width: 420px) {
+      .one h1 {font-size: 2em;}
+    }
